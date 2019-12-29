@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/whatsapp-BigQuiz/static/js/main.8d228b09.chunk.js",
+    "main.js.map": "/whatsapp-BigQuiz/static/js/main.8d228b09.chunk.js.map",
+    "runtime~main.js": "/whatsapp-BigQuiz/static/js/runtime~main.69fb3707.js",
+    "runtime~main.js.map": "/whatsapp-BigQuiz/static/js/runtime~main.69fb3707.js.map",
+    "static/js/2.c9ea8002.chunk.js": "/whatsapp-BigQuiz/static/js/2.c9ea8002.chunk.js",
+    "static/js/2.c9ea8002.chunk.js.map": "/whatsapp-BigQuiz/static/js/2.c9ea8002.chunk.js.map",
+    "index.html": "/whatsapp-BigQuiz/index.html",
+    "precache-manifest.9cc0cc5308419e11f1e4454e64cc5a1b.js": "/whatsapp-BigQuiz/precache-manifest.9cc0cc5308419e11f1e4454e64cc5a1b.js",
+    "service-worker.js": "/whatsapp-BigQuiz/service-worker.js",
+    "static/media/bg.png": "/whatsapp-BigQuiz/static/media/bg.eb71b142.png",
+    "static/media/whatsapp-chat-example.zip": "/whatsapp-BigQuiz/static/media/whatsapp-chat-example.570e52ac.zip"
+  }
+}
