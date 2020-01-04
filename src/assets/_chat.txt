@@ -1,0 +1,57 @@
+12/30/19, 4:48 PM - Messages to this group are now secured with end-to-end encryption. Tap for more info.
+12/30/19, 4:48 PM - Nambirajan Vanamamalai created group "5questions Test"
+12/30/19, 4:48 PM - Nambirajan Vanamamalai added you
+12/30/19, 4:48 PM - Nambirajan Vanamamalai: Hi Pratik, just created this group to test our quiz app
+12/30/19, 4:48 PM - Nambirajan Vanamamalai: Hi @919957049233
+12/30/19, 4:48 PM - Nambirajan Vanamamalai: Just testing a quiz app
+12/30/19, 4:49 PM - Nambirajan Vanamamalai: #startquiz
+12/30/19, 4:49 PM - Nambirajan Vanamamalai: Who became the CM of Maharashtra today?
+12/30/19, 4:49 PM - Pratik Shah: Yo
+12/30/19, 4:50 PM - Nambirajan Vanamamalai: IMG-20191230-WA0002.jpg (file attached)
+Id the person waving
+12/30/19, 4:50 PM - Nambirajan Vanamamalai: 🤟🏻
+12/30/19, 4:57 PM - Nambirajan Vanamamalai: Which brand's logo had colours because they are also the colours of Spain flag, where many early Californian settlers were born? Perhaps by displaying Spanish colours it was hoped an emotional bond would be created.
+12/30/19, 4:58 PM - Pratik Shah: Let's play around with all possible types of questions and chat scenarios
+12/30/19, 4:58 PM - Nambirajan Vanamamalai: Two major
+12/30/19, 4:58 PM - Nambirajan Vanamamalai: One is Image which is the primary
+12/30/19, 4:59 PM - Nambirajan Vanamamalai: Other is text
+12/30/19, 4:59 PM - Nambirajan Vanamamalai: And if you refer to my design
+12/30/19, 4:59 PM - Nambirajan Vanamamalai: If we can highlight the question chat alone
+12/30/19, 4:59 PM - Nambirajan Vanamamalai: So readers can skip to the questions they are interested about
+12/30/19, 5:02 PM - Pratik Shah: To identify question is also tricky.. I can't rely on just question mark
+12/30/19, 5:02 PM - Pratik Shah: Or WH words
+12/30/19, 5:02 PM - Pratik Shah: As they are very frequent
+12/30/19, 5:05 PM - Nambirajan Vanamamalai: #endquiz
+12/30/19, 5:06 PM - Nambirajan Vanamamalai: Ok
+12/30/19, 5:06 PM - Nambirajan Vanamamalai: Can we have a back end panel where I can tag questions?
+12/30/19, 5:07 PM - Pratik Shah: That will be too much effort.. plus if WhatsApp chat format changes.  I will have to code everything again
+12/30/19, 5:07 PM - Nambirajan Vanamamalai: Got it
+12/30/19, 5:08 PM - Pratik Shah: Let me collect on keywords.. like..
+
+WH and identify and question mark
+12/30/19, 5:08 PM - Pratik Shah: More than 2 and I will mark as question😛
+12/30/19, 5:08 PM - Nambirajan Vanamamalai: Yup that's a good logic
+12/30/19, 5:08 PM - Nambirajan Vanamamalai: Guess that logic will break very rarely
+12/30/19, 5:09 PM - Pratik Shah: We can keep evolving the logic as it's independent
+12/30/19, 5:09 PM - Nambirajan Vanamamalai: 👍🏻
+12/30/19, 5:09 PM - Nambirajan Vanamamalai: Do we have to refresh the chat backup everyday?
+12/30/19, 5:10 PM - Pratik Shah: Yup..
+12/30/19, 5:10 PM - Pratik Shah: But I am trying to think of a better way
+12/30/19, 5:10 PM - Nambirajan Vanamamalai: Ok
+12/30/19, 5:10 PM - Pratik Shah: For now it will be daily upload
+12/30/19, 5:10 PM - Nambirajan Vanamamalai: Ok that's fine; I can refresh it
+12/30/19, 5:10 PM - Nambirajan Vanamamalai: Daily/ regular interval
+12/30/19, 5:11 PM - Pratik Shah: Yeah
+12/30/19, 5:11 PM - Nambirajan Vanamamalai: If you checked my design I gave provision for Google ads
+12/30/19, 5:12 PM - Nambirajan Vanamamalai: We can keep some space as placeholder for it in every page?
+12/30/19, 5:13 PM - Pratik Shah: Yes that can be added.  All layout changes we will do once it's stable
+12/30/19, 5:13 PM - Nambirajan Vanamamalai: 👍🏻
+12/30/19, 5:13 PM - Pratik Shah: Share that image here again
+12/30/19, 5:13 PM - Pratik Shah: Let's see if it has some logic
+12/30/19, 5:14 PM - Nambirajan Vanamamalai: Sent
+12/30/19, 5:15 PM - Nambirajan Vanamamalai: Shall I buy a domain name?
+12/30/19, 5:15 PM - Pratik Shah: VID-20191230-WA0003.mp4 (file attached)
+Trying random images
+12/30/19, 5:15 PM - Pratik Shah: Let's do that later
+12/30/19, 5:15 PM - Pratik Shah: I will host it on sub domain for now
+12/30/19, 5:15 PM - Nambirajan Vanamamalai: Ok

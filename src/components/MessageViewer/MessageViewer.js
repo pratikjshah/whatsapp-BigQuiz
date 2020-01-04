@@ -7,10 +7,18 @@ import * as S from './style';
 import { authorColors } from '../../utils/colors';
 
 const MessageViewer = ({ messages, limit }) => {
+  //console.log('In MessageViewer');
   const participants = Array.from(
     new Set(messages.map(({ author }) => author)),
   ).filter(author => author !== 'System');
-  const activeUser = participants[1];
+  var activeUserIndex = 1;
+  if (participants.length > 2) {
+    var min = 1;
+    var max = participants.length - 1;
+    activeUserIndex =  Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  //console.log('activeUserIndex: '+ activeUserIndex + '  |  participants.length: ' + participants.length);
+  const activeUser = participants[activeUserIndex];
   const colorMap = participants.reduce((obj, participant, i) => {
     return { ...obj, [participant]: authorColors[i % authorColors.length] };
   }, {});
@@ -36,8 +44,11 @@ const MessageViewer = ({ messages, limit }) => {
             <Message
               key={i} // eslint-disable-line react/no-array-index-key
               message={message}
+              date={message.date}
               color={colorMap[message.author]}
               isActiveUser={activeUser === message.author}
+              isQuestion={message.isQuestion}
+              hasAttachment={message.hasAttachment}
               sameAuthorAsPrevious={
                 prevMessage && prevMessage.author === message.author
               }
@@ -52,9 +63,11 @@ const MessageViewer = ({ messages, limit }) => {
 MessageViewer.propTypes = {
   messages: PropTypes.arrayOf(
     PropTypes.shape({
-      date: PropTypes.instanceOf(Date),
+      date: PropTypes.string,
       author: PropTypes.string,
       message: PropTypes.string,
+      isQuestion: PropTypes.bool,
+      hasAttachment: PropTypes.bool
     }),
   ).isRequired,
   limit: PropTypes.number,

@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.js": "/whatsapp-BigQuiz/static/js/main.8d228b09.chunk.js",
-    "main.js.map": "/whatsapp-BigQuiz/static/js/main.8d228b09.chunk.js.map",
-    "runtime~main.js": "/whatsapp-BigQuiz/static/js/runtime~main.69fb3707.js",
-    "runtime~main.js.map": "/whatsapp-BigQuiz/static/js/runtime~main.69fb3707.js.map",
-    "static/js/2.c9ea8002.chunk.js": "/whatsapp-BigQuiz/static/js/2.c9ea8002.chunk.js",
-    "static/js/2.c9ea8002.chunk.js.map": "/whatsapp-BigQuiz/static/js/2.c9ea8002.chunk.js.map",
-    "index.html": "/whatsapp-BigQuiz/index.html",
-    "precache-manifest.9cc0cc5308419e11f1e4454e64cc5a1b.js": "/whatsapp-BigQuiz/precache-manifest.9cc0cc5308419e11f1e4454e64cc5a1b.js",
-    "service-worker.js": "/whatsapp-BigQuiz/service-worker.js",
-    "static/media/bg.png": "/whatsapp-BigQuiz/static/media/bg.eb71b142.png",
-    "static/media/whatsapp-chat-example.zip": "/whatsapp-BigQuiz/static/media/whatsapp-chat-example.570e52ac.zip"
+    "main.js": "/static/js/main.f22622fb.chunk.js",
+    "main.js.map": "/static/js/main.f22622fb.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.c3fd06a0.chunk.js": "/static/js/2.c3fd06a0.chunk.js",
+    "static/js/2.c3fd06a0.chunk.js.map": "/static/js/2.c3fd06a0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.138e89f50002c1a4045dff3a3120d9f8.js": "/precache-manifest.138e89f50002c1a4045dff3a3120d9f8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/bg.png": "/static/media/bg.eb71b142.png",
+    "static/media/error.svg": "/static/media/error.1bc77022.svg",
+    "static/media/random-shapes.svg": "/static/media/random-shapes.1daab8f1.svg",
+    "static/media/whatsapp-chat-example.zip": "/static/media/whatsapp-chat-example.570e52ac.zip"
   }
 }

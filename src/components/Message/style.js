@@ -4,6 +4,7 @@ import { overflowBreakWord, messageBaseStyle } from '../../utils/styles';
 import {
   systemBackgroundColor,
   activeUserBackgroundColor,
+  questionBackgroundColor,
 } from '../../utils/colors';
 
 const Item = styled.li`
@@ -31,6 +32,7 @@ const Bubble = styled.div`
   ${messageBaseStyle}
 
   background-color: white;
+  max-width: 84%;
   ${props =>
     props.isSystem &&
     css`
@@ -42,6 +44,17 @@ const Bubble = styled.div`
       text-align: left;
       background-color: ${activeUserBackgroundColor};
     `}
+  ${props =>
+    props.isQuestion &&
+    css`
+      text-align: left;
+      background-color: ${questionBackgroundColor};
+    `}
+  ${props =>
+    props.hasAttachment &&
+    css`
+      flex-flow: column;
+    `}
 
   @media (max-width: 699px) {
     flex-direction: column;
@@ -49,6 +62,11 @@ const Bubble = styled.div`
 
   @media (min-width: 700px) {
     max-width: 65%;
+  }
+
+  .media {
+    max-width: 100%;
+    max-height: 50vh;
   }
 `;
 

@@ -4,6 +4,9 @@ import { hideText, normalizeButton, normalizeInput } from './utils/styles';
 import { whatsappGreenColor, whatsappGreenDarkColor } from './utils/colors';
 import { zIndex } from './utils/z-index';
 
+import mediaNotFound from './img/error.svg';
+import pageBG from './img/random-shapes.svg';
+
 const buttonSize = '44px';
 
 const GlobalStyles = createGlobalStyle`
@@ -16,10 +19,13 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-family: sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   body {
     margin: 0;
+    padding: 0;
     color: #333;
   }
 
@@ -37,10 +43,113 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html,
-  body,
-  #root {
+  body {
     height: 100%;
   }
+
+  #root {
+    height: auto;
+    background-image: linear-gradient(159deg, #1D1E1F 0%, #151617 77%);
+    background: #5855d6;
+    position: relative;
+    display: block;
+  }
+
+  .rootContainer {
+    background-image: url(${pageBG});
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    display: block;
+    position: relative;
+  }
+
+  media {
+    display: block;
+    min-height: 48px;
+    min-width: 64px;
+    margin: 16px 0;
+    background-image: url(${mediaNotFound});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.24;
+
+  }
+
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+
+  .box-shadow {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+  }
+
+  .header {
+    background: #2D384A;
+    background: transparent;
+  }
+  .header .top-header {
+    background: #1F2733;
+    background: transparent;
+    height: 64px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 64px;
+  }
+  .container {
+    z-index: 10;
+  }
+  .container .card {
+    max-width: 992px;
+    margin: 0 auto;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    border: none !important;
+        background: #ffffff;
+  }
+  .header .card {
+    background: none;
+  }
+  .header .card > div {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+    margin: 2rem 0 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header .card span.whatsapp {
+    font-size: 1.6rem;
+    display: block;
+    line-height: 2rem;
+  }
+
+  .header .card span.quiz {
+    font-weight: bolder;
+  }
+
+  .footer {
+    padding: 48px 0;
+    background: none !important;
+    color: rgba(255,255,255,0.84);
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer a {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+
 `;
 
 const Container = styled.div`
@@ -128,8 +237,9 @@ const Overlay = styled.button`
   width: 100%;
   top: 0;
   bottom: 0;
+  left: 0;
   background-color: black;
-  opacity: ${props => (props.isActive ? 0.2 : 0)};
+  opacity: ${props => (props.isActive ? 0.4 : 0)};
   transition: opacity 0.3s ease;
   z-index: ${zIndex.overlay};
   ${props =>
