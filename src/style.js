@@ -137,6 +137,14 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bolder;
   }
 
+  .quizTitle {
+    display: block;
+    text-align: center;
+    margin: 1.4rem 0;
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+
   .footer {
     padding: 48px 0;
     background: none !important;

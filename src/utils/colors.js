@@ -3,7 +3,7 @@ const viewerBackgroundColor = '#e5ddd5';
 const activeUserBackgroundColor = '#ddf7c8';
 const systemBackgroundColor = '#fff5c4';
 
-const questionBackgroundColor = '#fff8dc';
+const questionBackgroundColor = '#c8f0ff';
 
 const whatsappGreenColor = '#07bc4c';
 const whatsappGreenDarkColor = '#0c9842';

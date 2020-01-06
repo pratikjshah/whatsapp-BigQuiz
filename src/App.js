@@ -144,7 +144,7 @@ const App = () => {
       </div>
       <div className="container relative">
         <div className="card relative footer">
-          Developed with 💜 by <a href="https://pratikshah.website" target="_blank">Pratik Shah</a>
+          Developed with 💜 by <a href="http://pratikshah.website" target="_blank">Pratik Shah</a>
         </div>
       </div>
     </>

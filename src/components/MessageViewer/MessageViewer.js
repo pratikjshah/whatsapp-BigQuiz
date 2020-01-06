@@ -19,14 +19,28 @@ const MessageViewer = ({ messages, limit }) => {
   }
   //console.log('activeUserIndex: '+ activeUserIndex + '  |  participants.length: ' + participants.length);
   const activeUser = participants[activeUserIndex];
+
   const colorMap = participants.reduce((obj, participant, i) => {
     return { ...obj, [participant]: authorColors[i % authorColors.length] };
   }, {});
   const renderedMessages = messages.slice(0, limit);
   const isLimited = renderedMessages.length !== messages.length;
 
+
+  // var title = renderedMessages[0];
+  // function getTitle(message) {
+  //   return message.date;
+  // }
+  // console.log("renderedMessages: " + getTitle(title));
+  // const quizTitle = "Random";
+
+  // {messages.length > 0 && (
+  //       <div className="quizTitle">{quizTitle}</div>
+  //     )}
+
   return (
     <S.Container>
+
       {messages.length > 0 && (
         <S.P>
           <S.Info>

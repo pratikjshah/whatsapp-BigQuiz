@@ -51,7 +51,12 @@ const App = () => {
   	var sQuizPointers = [];
   	var eQuizPointers = [];
 
+  	var quizzes = [];
+  	var quiz = {};
+
   	var i = 0;
+
+  	var hasQuizStarted = false;
 
   	for (var msg of messages) {
   		msg.date = msg.date + "";
@@ -68,9 +73,17 @@ const App = () => {
 
   		if(msg.message.search(/#startquiz/g) >= 0) {
   			sQuizPointers.push(i);
+  			hasQuizStarted = true;
+  			quiz.start = i;
   		}
   		if(msg.message.search(/#endquiz/g) >= 0) {
   			eQuizPointers.push(i);
+  			if(hasQuizStarted) {
+  				quiz.end = i;
+  				hasQuizStarted = false;
+  				quizzes.push(quiz);
+  				quiz = {};
+  			}
   		}
 
   		/* ==== Is Question? ===== */
@@ -78,11 +91,27 @@ const App = () => {
   		i++;
   	}
 
-  	var min = Math.min(sQuizPointers.length, eQuizPointers.length) - 1;
-	if(sQuizPointers[min] < eQuizPointers[min]) {
-		messages = messages.slice(sQuizPointers[min], eQuizPointers[min]+1);
-		// messages = messages.slice(sQuizPointers[0], eQuizPointers[min]+1);
-	}
+  	if(hasQuizStarted) {
+  		quiz.end = messages.length - 1;
+  		hasQuizStarted = false;
+  		quizzes.push(quiz);
+  	}
+
+  	// var quizzes = getQuizRanges(sQuizPointers,eQuizPointers);
+
+  	if(quizzes.length >= 1) {
+  		var lastQuiz = quizzes[quizzes.length - 1];
+  		messages = messages.slice(lastQuiz.start, lastQuiz.end + 1);
+  		// for(var i=0; i<quizzes.length; i++) {
+
+  		// }
+  	}
+
+ //  	var min = Math.min(sQuizPointers.length, eQuizPointers.length) - 1;
+	// if(sQuizPointers[min] < eQuizPointers[min]) {
+	// 	messages = messages.slice(sQuizPointers[min], eQuizPointers[min]+1);
+	// 	// messages = messages.slice(sQuizPointers[0], eQuizPointers[min]+1);
+	// }
 
   	var jsonFile = new Blob([JSON.stringify(messages)], {
 		type: 'application/json'
@@ -90,6 +119,25 @@ const App = () => {
   	exportDataToFile(jsonFile, '__chat.json');
   	setMessages(messages);
   	console.log(messages);
+
+  }
+
+  function getQuizRanges(startPoints, endPoints) {
+
+  	var quizzes = [];
+  	var quiz = {};
+
+  	for(var i=0; i<endPoints.length; i++) {
+  		for(var j=1; startPoints.length; j++) {
+  			if((endPoints[i] > startPoints[j-1]) && (endPoints[i] < startPoints[j])) {
+  				quiz.start = startPoints[j-1];
+  				quiz.end = endPoints[i];
+  				quizzes.push(quiz);
+  			}
+  		}
+  	}
+
+  	return quizzes;
 
   }
 
@@ -141,7 +189,7 @@ const App = () => {
     // }
 
     if(trustScore > 2) {
-    	console.log("Possible Question: " + msg);
+    	//console.log("Possible Question: " + msg);
     	return true;
     }
 
